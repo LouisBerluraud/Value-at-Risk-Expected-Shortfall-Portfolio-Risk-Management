@@ -8,8 +8,7 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
 # Importing tickers from a csv
-# tickers_1 = pd.read_csv("/Users/pafornwl/Desktop/Code/Python/Streamlit/Projet2/tickers.csv", sep= ';') # Guillaume
-tickers_1 = pd.read_csv("C:/Users/berlu/OneDrive/Bureau/Projet PM/1/tickers.csv", sep=";") # Louis
+tickers_1 = pd.read_csv("tickers.csv", sep=";") 
 tickers_1 = tickers_1.set_index('Symbol')
 
 # Importing data from Yahoo Finance
