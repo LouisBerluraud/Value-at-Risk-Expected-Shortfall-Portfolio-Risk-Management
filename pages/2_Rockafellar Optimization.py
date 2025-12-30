@@ -356,7 +356,7 @@ if submitted3:
                     u >= 0,
                     cvar <= risk_level,          # CVaR constraint
                     cp.sum(w) == 1,              # fsum of weights = 1
-                    w >= cap_min, # no short position because cap min is always >= 0
+                    w >= cap_min / 100, # no short position because cap min is always >= 0
                     w <= cap_max / 100
                 ]
         
